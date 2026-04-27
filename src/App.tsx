@@ -452,6 +452,14 @@ function App() {
               <MessageCircle size={20} />
               WhatsApp
             </a>
+            <a
+              href={cvFile}
+              download="CV-Jesse-Rafael-das-Neves.pdf"
+              className="px-4 py-2 border border-[#3B82F6] text-[#3B82F6] rounded-lg hover:bg-[#3B82F6] hover:text-white transition-all flex items-center gap-2"
+            >
+              <Download size={16} />
+              Baixar CV
+            </a>
           </div>
           <div className="flex justify-center gap-4">
             <a
