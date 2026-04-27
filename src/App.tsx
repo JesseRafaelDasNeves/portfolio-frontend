@@ -129,12 +129,12 @@ function App() {
             </div>
           </div>
           <div className="relative flex justify-center items-center">
-            <div className="absolute inset-0 bg-linear-to-br from-[#3B82F6]/20 to-transparent rounded-2xl blur-3xl w-[400px] h-[400px] top-[-10px] left-20"></div>
-            <div className="relative bg-linear-to-br from-[#1F1F1F] to-[#0D0D0D] border border-white/10 rounded-2xl w-[350px] h-[350px] flex items-center justify-center overflow-hidden">
+            <div className="absolute inset-0 bg-linear-to-br from-[#3B82F6]/20 to-transparent rounded-2xl blur-3xl max-w-[400px] max-h-[400px] top-[-10px] left-20"></div>
+            <div className="relative bg-linear-to-br from-[#1F1F1F] to-[#0D0D0D] border border-white/10 rounded-2xl max-w-[350px] max-h-[350px] flex items-center justify-center overflow-hidden">
               <img
                 src={fotoPerfil}
                 alt="Jessé das Neves"
-                className="w-[300px] h-[300px] object-cover"
+                className="max-w-[300px] max-h-[300px] object-cover"
               />
             </div>
           </div>
