@@ -9,6 +9,7 @@ import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import fotoPerfil from "./assets/foto-perfil.png";
 import imageIpm from "./assets/ipm-sistemas.png";
 import omnismart from "./assets/omnismart.png";
+import cvFile from "./assets/cv.pdf";
 import "./App.css";
 
 function App() {
@@ -29,7 +30,15 @@ function App() {
       "Spring Boot",
       "Mensageria",
     ],
-    frontend: ["Angular", "React", "HTML", "CSS", "JavaScript", "jQuery"],
+    frontend: [
+      "Angular",
+      "React",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Tailwind CSS",
+    ],
     databases: ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
     devops: [
       "Docker",
@@ -79,13 +88,14 @@ function App() {
 
   const projects = [
     {
-      name: "API de Faturamento (Java)",
+      name: "Sistema de Gestão Pública",
       description:
-        "API REST construída com Java Spring Boot, PostgreSQL e JPA para gerenciamento de faturas e pagamentos",
-      tech: ["Java", "Spring Boot", "PostgreSQL", "JPA", "Lombok"],
-      github: "https://github.com/JesseRafaelDasNeves/jnpay-java",
-      demo: null,
-      isPrivate: false,
+        "Sistema de grande porte para gestão pública com mais de 200 milhões de atendimentos e 2 milhões de usuários",
+      tech: ["PHP", "PostgreSQL", "REST API", "jQuery", "Tomcat", "Apache"],
+      github: null,
+      demo: "https://indaial.atende.net/",
+      isPrivate: true,
+      image: imageIpm,
     },
     {
       name: "Plataforma Omnichannel",
@@ -112,6 +122,24 @@ function App() {
       image: omnismart,
     },
     {
+      name: "API de Faturamento (Java)",
+      description:
+        "API REST construída com Java Spring Boot, PostgreSQL e JPA para gerenciamento de faturas e pagamentos",
+      tech: ["Java", "Spring Boot", "PostgreSQL", "JPA", "Lombok"],
+      github: "https://github.com/JesseRafaelDasNeves/jnpay-java",
+      demo: null,
+      isPrivate: false,
+    },
+    {
+      name: "API de Filmes",
+      description:
+        "API REST para um sistema de catálogo de filmes, cinemas, endereços e sessões.",
+      tech: ["C#", ".NET Core", "Entity Framework", "Mysql"],
+      github: "https://github.com/JesseRafaelDasNeves/Filmes",
+      demo: null,
+      isPrivate: false,
+    },
+    {
       name: "API de Faturamento (PHP)",
       description:
         "API REST construída com PHP Laravel, PostgreSQL, React para gerenciamento de faturas e pagamentos",
@@ -121,14 +149,13 @@ function App() {
       isPrivate: false,
     },
     {
-      name: "Sistema de Gestão Pública",
+      name: "Portfolio",
       description:
-        "Sistema de grande porte para gestão pública com mais de 200 milhões de atendimentos e 2 milhões de usuários",
-      tech: ["PHP", "PostgreSQL", "REST API", "jQuery", "Tomcat", "Apache"],
-      github: null,
-      demo: "https://indaial.atende.net/",
-      isPrivate: true,
-      image: imageIpm,
+        "Portfólio pessoal para apresentar meus projetos e habilidades",
+      tech: ["React", "Typescript", "Tailwind CSS", "Vite"],
+      github: "https://github.com/JesseRafaelDasNeves/portfolio-frontend",
+      demo: null,
+      isPrivate: false,
     },
   ];
 
@@ -179,10 +206,14 @@ function App() {
             >
               Contato
             </a>
-            <button className="px-4 py-2 border border-[#3B82F6] text-[#3B82F6] rounded-lg hover:bg-[#3B82F6] hover:text-white transition-all flex items-center gap-2">
+            <a
+              href={cvFile}
+              download="CV-Jesse-Rafael-das-Neves.pdf"
+              className="px-4 py-2 border border-[#3B82F6] text-[#3B82F6] rounded-lg hover:bg-[#3B82F6] hover:text-white transition-all flex items-center gap-2"
+            >
               <Download size={16} />
               Baixar CV
-            </button>
+            </a>
           </div>
         </div>
       </nav>
