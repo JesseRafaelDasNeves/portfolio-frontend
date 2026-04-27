@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+# Portfólio Profissional - Jessé das Neves
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém o código-fonte do meu site de portfólio pessoal. O objetivo deste projeto é centralizar informações sobre minha carreira, destacar minhas principais competências técnicas como Desenvolvedor Full Stack (com foco em Backend) e exibir os projetos de maior impacto que desenvolvi ou participei.
 
-Currently, two official plugins are available:
+## 🚀 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O site foi construído com foco em performance, modernidade e responsividade. Ele serve como um cartão de visitas digital onde visitantes podem encontrar:
 
-## React Compiler
+- **Sobre Mim:** Resumo da minha trajetória de mais de 10 anos na área.
+- **Stack Técnica:** Detalhamento de tecnologias dominadas (Backend, Frontend, Bancos de Dados e DevOps).
+- **Experiência:** Linha do tempo profissional com conquistas e responsabilidades.
+- **Projetos:** Galeria de sistemas desenvolvidos, incluindo links para código (quando público) e demonstrações.
+- **Contato:** Canais diretos de comunicação (E-mail, WhatsApp, LinkedIn).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+O projeto utiliza o que há de mais moderno no ecossistema Frontend:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **[React 19](https://react.dev/):** Biblioteca principal para construção da interface.
+- **[TypeScript](https://www.typescriptlang.org/):** Tipagem estática para maior segurança e produtividade.
+- **[Vite](https://vitejs.dev/):** Ferramenta de build rápida para uma experiência de desenvolvimento otimizada.
+- **[Tailwind CSS 4](https://tailwindcss.com/):** Framework CSS utilitário para estilização rápida e responsiva.
+- **[Lucide React](https://lucide.dev/) & [Radix UI Icons](https://icons.radix-ui.com/):** Bibliotecas de ícones modernos.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📁 Estrutura de Pastas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+A estrutura do projeto é organizada da seguinte forma:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+portfolio-frontend/
+├── public/              # Assets estáticos (ícones de aba, etc.)
+├── src/
+│   ├── assets/          # Imagens, fotos de perfil e logos
+│   ├── App.tsx          # Componente principal (contém o conteúdo e estrutura)
+│   ├── App.css          # Estilos específicos do App
+│   ├── main.tsx         # Ponto de entrada da aplicação
+│   └── index.css        # Estilos globais e diretivas do Tailwind
+├── package.json         # Dependências e scripts do projeto
+└── tsconfig.json        # Configurações do TypeScript
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💻 Como Executar Localmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Siga os passos abaixo para rodar o projeto em sua máquina:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/JesseRafaelDasNeves/portfolio-frontend.git
+    ```
+
+2.  **Acesse o diretório:**
+    ```bash
+    cd portfolio-frontend
+    ```
+
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+
+4.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+
+5.  **Acesse no navegador:**
+    O projeto estará disponível em `http://localhost:5173` (ou na porta indicada no terminal).
+
+---
+Desenvolvido por **Jessé Rafael das Neves**.
