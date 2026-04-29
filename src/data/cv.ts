@@ -127,9 +127,9 @@ export const CV = {
       isPrivate: false,
     },
     {
-      name: "API de Faturamento (PHP)",
+      name: "Aplicação Web de Faturamento (PHP)",
       description:
-        "API REST construída com PHP Laravel, PostgreSQL, React para gerenciamento de faturas e pagamentos",
+        "Aplicação web com PHP Laravel, PostgreSQL, React para gerenciamento de faturas e pagamentos",
       tech: ["PHP", "Laravel", "PostgreSQL", "React"],
       github: "https://github.com/JesseRafaelDasNeves/jnpay",
       demo: null,
