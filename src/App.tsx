@@ -87,11 +87,11 @@ function App() {
               className="text-3xl md:text-4xl text-[#3B82F6] mb-6"
               style={{ fontFamily: "Space Grotesk, sans-serif" }}
             >
-              Desenvolvedor Backend
+              Desenvolvedor Fullstack
             </h2>
             <p className="text-lg text-gray-400 mb-8 leading-relaxed">
               Mais de 10 anos de experiência construindo sistemas escaláveis e
-              de grande porte. Foco em Node.js, PHP e arquitetura de
+              de grande porte. Foco em Node.js, PHP, Angular e arquitetura de
               microsserviços, transformando requisitos complexos em soluções
               elegantes e performáticas.
             </p>
@@ -152,7 +152,7 @@ function App() {
               Sobre Mim
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              Desenvolvedor Backend com mais de 10 anos de experiência na
+              Desenvolvedor Fullstack com mais de 10 anos de experiência na
               construção e evolução de sistemas de grande porte nos setores de
               educação, gestão pública e comunicação. Forte atuação com Node.js
               e PHP, com foco em arquitetura de sistemas escaláveis,
