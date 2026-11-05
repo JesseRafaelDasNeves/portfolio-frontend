@@ -430,15 +430,6 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="bg-[#111111] border-t border-white/8">
         <div className="max-w-[1200px] mx-auto px-6 py-24 text-center">
-          <h3
-            className="text-5xl font-bold mb-4"
-            style={{ fontFamily: "Space Grotesk, sans-serif" }}
-          >
-            Vamos construir algo incrível juntos.
-          </h3>
-          <p className="text-xl text-gray-400 mb-8">
-            Entre em contato e vamos conversar.
-          </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <a
               href="mailto:jesserafa.ws@gmail.com"
