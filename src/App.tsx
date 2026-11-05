@@ -12,7 +12,17 @@ import { CV } from "./data/cv";
 import "./App.css";
 
 function App() {
-  const { skills, experience, projects } = CV;
+  const {
+    name,
+    acronym,
+    title,
+    description,
+    about,
+    metrics,
+    skills,
+    experience,
+    projects,
+  } = CV;
 
   return (
     <div
@@ -27,7 +37,7 @@ function App() {
               className="w-10 h-10 rounded-lg bg-[#3B82F6] flex items-center justify-center"
               style={{ fontFamily: "Space Grotesk, sans-serif" }}
             >
-              <span className="font-bold">JN</span>
+              <span className="font-bold">{acronym}</span>
             </div>
           </div>
           <div
@@ -81,19 +91,16 @@ function App() {
               className="text-4xl md:text-6xl font-bold mb-4"
               style={{ fontFamily: "Space Grotesk, sans-serif" }}
             >
-              Jessé das Neves
+              {name}
             </h1>
             <h2
               className="text-3xl md:text-4xl text-[#3B82F6] mb-6"
               style={{ fontFamily: "Space Grotesk, sans-serif" }}
             >
-              Desenvolvedor Fullstack
+              {title}
             </h2>
             <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-              Mais de 10 anos de experiência construindo sistemas escaláveis e
-              de grande porte. Foco em Node.js, PHP, Angular e arquitetura de
-              microsserviços, transformando requisitos complexos em soluções
-              elegantes e performáticas.
+              {description}
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a
@@ -151,49 +158,25 @@ function App() {
             >
               Sobre Mim
             </h3>
-            <p className="text-gray-400 leading-relaxed">
-              Desenvolvedor Fullstack com mais de 10 anos de experiência na
-              construção e evolução de sistemas de grande porte nos setores de
-              educação, gestão pública e comunicação. Forte atuação com Node.js
-              e PHP, com foco em arquitetura de sistemas escaláveis,
-              desenvolvimento de APIs e integração entre sistemas. Experiência
-              em microsserviços, modelagem de domínio (DDD), Clean Code e testes
-              automatizados. Tenho utilizado Inteligência Artificial para
-              aumentar produtividade e qualidade no desenvolvimento, incluindo
-              integração de soluções com agentes de IA utilizando LangChain.
-            </p>
+            <p className="text-gray-400 leading-relaxed">{about}</p>
           </div>
           <div className="grid grid-cols-3 gap-4">
-            <div className="bg-[#1F1F1F] border border-white/10 rounded-xl p-6 hover:border-[#3B82F6]/50 transition-all">
+            {metrics.map((metric, index) => (
               <div
-                className="text-3xl font-bold text-[#3B82F6] mb-2"
-                style={{ fontFamily: "Space Grotesk, sans-serif" }}
+                key={index}
+                className="bg-[#1F1F1F] border border-white/10 rounded-xl p-6 hover:border-[#3B82F6]/50 transition-all"
               >
-                10+
+                <div
+                  className="text-3xl font-bold text-[#3B82F6] mb-2"
+                  style={{ fontFamily: "Space Grotesk, sans-serif" }}
+                >
+                  {metric.title}
+                </div>
+                <div className="text-sm text-gray-400">
+                  {metric.description}
+                </div>
               </div>
-              <div className="text-sm text-gray-400">Anos de Experiência</div>
-            </div>
-            <div className="bg-[#1F1F1F] border border-white/10 rounded-xl p-6 hover:border-[#3B82F6]/50 transition-all">
-              <div
-                className="text-3xl font-bold text-[#3B82F6] mb-2"
-                style={{ fontFamily: "Space Grotesk, sans-serif" }}
-              >
-                1.5M
-              </div>
-              <div className="text-sm text-gray-400">
-                Requisições/Dia. Capacidade de lidar com sistemas com alta carga
-                de processamento
-              </div>
-            </div>
-            <div className="bg-[#1F1F1F] border border-white/10 rounded-xl p-6 hover:border-[#3B82F6]/50 transition-all">
-              <div
-                className="text-3xl font-bold text-[#3B82F6] mb-2"
-                style={{ fontFamily: "Space Grotesk, sans-serif" }}
-              >
-                20+
-              </div>
-              <div className="text-sm text-gray-400">Tecnologias dominadas</div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -282,6 +265,27 @@ function App() {
             </div>
             <div className="flex flex-wrap gap-3">
               {skills.devops.map((skill) => (
+                <span
+                  key={skill}
+                  className="px-4 py-2 bg-[#1F1F1F] border border-white/10 rounded-full hover:border-[#3B82F6]/50 hover:scale-105 transition-all"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-1 h-6 bg-[#3B82F6]"></div>
+              <h4
+                className="text-xl font-bold"
+                style={{ fontFamily: "Space Grotesk, sans-serif" }}
+              >
+                IA
+              </h4>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {skills.ia.map((skill) => (
                 <span
                   key={skill}
                   className="px-4 py-2 bg-[#1F1F1F] border border-white/10 rounded-full hover:border-[#3B82F6]/50 hover:scale-105 transition-all"
