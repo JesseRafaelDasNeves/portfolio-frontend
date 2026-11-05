@@ -2,6 +2,28 @@ import imageIpm from "../assets/ipm-sistemas.png";
 import omnismart from "../assets/omnismart.png";
 
 export const CV = {
+  name: "Jessé das Neves",
+  acronym: 'JN',
+  title: "Desenvolvedor Fullstack",
+  description:
+    "Mais de 10 anos de experiência construindo sistemas escaláveis e de grande porte. Foco em Node.js, PHP, Angular e arquitetura de microsserviços, transformando requisitos complexos em soluções elegantes e performáticas.",
+  about:
+    "Desenvolvedor Fullstack com mais de 10 anos de experiência na construção e evolução de sistemas de grande porte nos setores de educação, gestão pública e comunicação. Forte atuação com Node.js e PHP, com foco em arquitetura de sistemas escaláveis, desenvolvimento de APIs e integração entre sistemas. Experiência em microsserviços, modelagem de domínio (DDD), Clean Code e testes automatizados. Tenho utilizado Inteligência Artificial para aumentar produtividade e qualidade no desenvolvimento, incluindo integração de soluções com agentes de IA utilizando LangChain.",
+  metrics: [
+    {
+      title: "10+",
+      description: "Anos de Experiência",
+    },
+    {
+      title: "1.5M",
+      description:
+        "Requisições/Dia. Capacidade de lidar com sistemas com alta carga de processamento",
+    },
+    {
+      title: "20+",
+      description: "Tecnologias dominadas",
+    },
+  ],
   skills: {
     backend: [
       "Node.js",
@@ -38,8 +60,30 @@ export const CV = {
       "Apache",
       "Tomcat",
     ],
+    ia: [
+      "LangChain",
+      "Google ADK",
+      "Agentes de IA",
+      "MCP",
+      "Figma AI",
+      "Stitch",
+    ],
   },
   experience: [
+    {
+      company: "Talent Four - Qualicorp",
+      role: "Desenvolvedor Full Stack",
+      period: "2026",
+      achievements: [
+        "Atuação em sistema financeiro de cálculo de comissões de planos de saúde com apuração de aproximadamente 200 mil contratos diários",
+        "Definição de arquitetura e especificação técnica de novos recursos ponta a ponta",
+        "Desenvolvimento de APIs e microsserviços em Node.js com banco em grafo (Neo4j) e mensageria (RabbitMQ)",
+        "Construção de interfaces responsivas com Vue.js e Vuetify em arquitetura de Microfrontends",
+        "Implementação de testes unitários e de integração com Jest",
+        "Automação de pipelines CI/CD no Azure DevOps e observabilidade em tempo real com Grafana",
+        "Aceleração de desenvolvimento e prototipagem UI/UX com Agentes de IA, MCP, Figma AI e Stitch",
+      ],
+    },
     {
       company: "Omnismart",
       role: "Desenvolvedor Full Stack",
@@ -63,7 +107,7 @@ export const CV = {
       period: "2015 – 2024",
       achievements: [
         "Desenvolvimento de sistemas de gestão pública com alto volume de dados e regras complexas",
-        "Atuação em sistemas com mais de 200 milhões de atendimentos e 2 milhões de usuários",
+        "Atuação em sistemas de gestão publica com mais de 200 milhões de atendimentos e 2 milhões de usuários",
         "Desenvolvimento de APIs REST e SOAP com PHP e PostgreSQL",
         "Integração com sistemas externos e ERPs governamentais",
         "Processamento de arquivos e comunicação via webservices",
@@ -109,20 +153,22 @@ export const CV = {
       image: omnismart,
     },
     {
-      name: "API de Faturamento (Java)",
+      name: "Distributed Wagering Processor",
       description:
-        "API REST construída com Java Spring Boot, PostgreSQL e JPA para gerenciamento de faturas e pagamentos",
-      tech: ["Java", "Spring Boot", "PostgreSQL", "JPA", "Lombok"],
-      github: "https://github.com/JesseRafaelDasNeves/jnpay-java",
-      demo: null,
-      isPrivate: false,
-    },
-    {
-      name: "API de Filmes",
-      description:
-        "API REST para um sistema de catálogo de filmes, cinemas, endereços e sessões.",
-      tech: ["C#", ".NET Core", "Entity Framework", "Mysql"],
-      github: "https://github.com/JesseRafaelDasNeves/Filmes",
+        "Serviço financeiro distribuído de alta consistência para processamento de transações, carteiras e reconciliação contábil com Transactional Outbox/Inbox, Lock Pessimista e idempotência",
+      tech: [
+        "TypeScript",
+        "Bun",
+        "NestJS",
+        "TypeORM",
+        "PostgreSQL",
+        "AWS SQS",
+        "LocalStack",
+        "Docker",
+        "Clean Architecture",
+        "DDD",
+      ],
+      github: "https://github.com/JesseRafaelDasNeves/pay-challenge",
       demo: null,
       isPrivate: false,
     },
